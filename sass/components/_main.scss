@@ -7,11 +7,32 @@ main {
   display: flex;
   flex-direction: column;
   padding: f.rem(24);
+
+  @include b.breakpoint(medium) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
 }
 
+.dataContainer {
+  @include b.breakpoint(medium) {
+    display: grid;
+    grid-template-columns: repeat(3, f.rem(255));
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: f.rem(18);
+  }
+}
 
 .report {
   margin-bottom: f.rem(24);
+
+  @include b.breakpoint(medium) {
+    margin-right: f.rem(30);
+    margin-bottom: f.rem(0);
+    height: f.rem(450);
+  }
 
   &__outerContainer {
     background-color: var(--color-dark-blue);
@@ -25,11 +46,19 @@ main {
     align-items: center;
     justify-content: space-evenly;
     padding: f.rem(24);
+
+    @include b.breakpoint(medium) {
+      display: block;
+    }
   }
 
   &__profileImage {
     border-radius: 50%;
     border: f.rem(3) solid var(--color-white);
+
+    @include b.breakpoint(medium) {
+      margin-bottom: f.rem(30);
+    }
   }
 
   &__header {
@@ -41,17 +70,30 @@ main {
     font-size: f.rem(24);
     font-style: normal;
     font-weight: v.$font-light;
+
+    @include b.breakpoint(medium) {
+      max-width: f.rem(139);
+      padding-bottom: f.rem(30);
+    }
   }
 
   &__profileContainer {
     display: flex;
     justify-content: space-evenly;
     padding: f.rem(24);
+
+    @include b.breakpoint(medium) {
+      display: block;
+    }
   }
 
   &__item {
     font-size: f.rem(18);
     color: var(--color-pale-blue);
+
+    @include b.breakpoint(medium) {
+      padding-bottom: f.rem(10);
+    }
   }
 }
 
@@ -65,6 +107,10 @@ main {
   &__icon {
     position: relative;
     left: f.rem(230);
+
+    @include b.breakpoint(medium) {
+      left: f.rem(150);
+    }
   }
 
   &__innerContainer {
@@ -86,6 +132,10 @@ main {
   &__icon {
     position: relative;
     left: f.rem(230);
+
+    @include b.breakpoint(medium) {
+      left: f.rem(150);
+    }
   }
 
   &__innerContainer {
@@ -99,7 +149,7 @@ main {
 
 .study {
   &__imageContainer {
-    background-color: #FF5E7D;
+    background-color: var(--color-light-red);
     border-top-left-radius: f.rem(18);
     border-top-right-radius: f.rem(18);
   }
@@ -107,6 +157,10 @@ main {
   &__icon {
     position: relative;
     left: f.rem(230);
+
+    @include b.breakpoint(medium) {
+      left: f.rem(150);
+    }
   }
 
   &__innerContainer {
@@ -128,6 +182,10 @@ main {
   &__icon {
     position: relative;
     left: f.rem(230);
+
+    @include b.breakpoint(medium) {
+      left: f.rem(150);
+    }
   }
 
   &__innerContainer {
@@ -149,6 +207,10 @@ main {
   &__icon {
     position: relative;
     left: f.rem(230);
+
+    @include b.breakpoint(medium) {
+      left: f.rem(150);
+    }
   }
 
   &__innerContainer {
@@ -170,6 +232,10 @@ main {
   &__icon {
     position: relative;
     left: f.rem(230);
+
+    @include b.breakpoint(medium) {
+      left: f.rem(150);
+    }
   }
 
   &__innerContainer {
@@ -199,11 +265,20 @@ main {
   display: inline-block;
 }
 
-.titleContainer,
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .informationContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include b.breakpoint(medium) {
+    display: block;
+  }
 }
 
 .lastWeek,
