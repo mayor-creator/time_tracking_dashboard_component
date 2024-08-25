@@ -1,0 +1,248 @@
+body {
+  background-color: var(--color-very-dark-blue);
+  color: var(--color-white);
+  font-family: "Rubik", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.report {
+  margin-bottom: 1.5rem;
+}
+.report__outerContainer {
+  background-color: var(--color-dark-blue);
+  border-radius: 1.125rem;
+}
+.report__innerContainer {
+  background-color: var(--color-blue);
+  border-radius: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+}
+.report__profileImage {
+  border-radius: 50%;
+  border: 0.1875rem solid var(--color-white);
+}
+.report__header {
+  color: var(--color-pale-blue);
+  font-size: 0.9375rem;
+}
+.report__name {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+}
+.report__profileContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+}
+.report__item {
+  font-size: 1.125rem;
+  color: var(--color-pale-blue);
+}
+
+.work__imageContainer {
+  background-color: var(--color-light-orange);
+  border-top-left-radius: 1.125rem;
+  border-top-right-radius: 1.125rem;
+}
+.work__icon {
+  position: relative;
+  left: 14.375rem;
+}
+.work__innerContainer {
+  background-color: var(--color-dark-blue);
+  border-radius: 1.125rem;
+  position: relative;
+  bottom: 1.875rem;
+  padding: 1.5rem;
+}
+
+.play__imageContainer {
+  background-color: #55C2E6;
+  border-top-left-radius: 1.125rem;
+  border-top-right-radius: 1.125rem;
+}
+.play__icon {
+  position: relative;
+  left: 14.375rem;
+}
+.play__innerContainer {
+  background-color: var(--color-dark-blue);
+  border-radius: 1.125rem;
+  position: relative;
+  bottom: 1.875rem;
+  padding: 1.5rem;
+}
+
+.study__imageContainer {
+  background-color: #FF5E7D;
+  border-top-left-radius: 1.125rem;
+  border-top-right-radius: 1.125rem;
+}
+.study__icon {
+  position: relative;
+  left: 14.375rem;
+}
+.study__innerContainer {
+  background-color: var(--color-dark-blue);
+  border-radius: 1.125rem;
+  position: relative;
+  bottom: 1.875rem;
+  padding: 1.5rem;
+}
+
+.exercise__imageContainer {
+  background-color: var(--color-lime-green);
+  border-top-left-radius: 1.125rem;
+  border-top-right-radius: 1.125rem;
+}
+.exercise__icon {
+  position: relative;
+  left: 14.375rem;
+}
+.exercise__innerContainer {
+  background-color: var(--color-dark-blue);
+  border-radius: 1.125rem;
+  position: relative;
+  bottom: 1.875rem;
+  padding: 1.5rem;
+}
+
+.social__imageContainer {
+  background-color: var(--color-de-saturated-blue);
+  border-top-left-radius: 1.125rem;
+  border-top-right-radius: 1.125rem;
+}
+.social__icon {
+  position: relative;
+  left: 14.375rem;
+}
+.social__innerContainer {
+  background-color: var(--color-dark-blue);
+  border-radius: 1.125rem;
+  position: relative;
+  bottom: 1.875rem;
+  padding: 1.5rem;
+}
+
+.selfCare__imageContainer {
+  background-color: var(--color-soft-orange);
+  border-top-left-radius: 1.125rem;
+  border-top-right-radius: 1.125rem;
+}
+.selfCare__icon {
+  position: relative;
+  left: 14.375rem;
+}
+.selfCare__innerContainer {
+  background-color: var(--color-dark-blue);
+  border-radius: 1.125rem;
+  position: relative;
+  bottom: 1.875rem;
+  padding: 1.5rem;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.hours {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.dots {
+  height: 0.3125rem;
+  width: 0.3125rem;
+  background-color: var(--color-pale-blue);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.titleContainer,
+.informationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lastWeek,
+.previousHours {
+  font-size: 0.9375rem;
+  color: var(--color-pale-blue);
+}
+
+:root {
+  --color-blue: hsl(246, 80%, 60%);
+  --color-light-orange: hsl(15, 100%, 70%);
+  --color-soft-blue: hsl(195, 74%, 62%);
+  --color-light-red: hsl(348, 100%, 68%);
+  --color-lime-green: hsl(145, 58%, 55%);
+  --color-violet: hsl(264, 64%, 52%);
+  --color-soft-orange: hsl(43, 84%, 65%);
+  --color-very-dark-blue: hsl(226, 43%, 10%);
+  --color-dark-blue: hsl(235, 46%, 20%);
+  --color-de-saturated-blue: hsl(235, 45%, 61%);
+  --color-pale-blue: hsl(236, 100%, 87%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+/*
+  CSS Reset
+  Author: Josh Comeau
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}/*# sourceMappingURL=style.css.map */
