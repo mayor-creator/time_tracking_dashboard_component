@@ -90,10 +90,15 @@ main {
   &__item {
     font-size: f.rem(18);
     color: var(--color-pale-blue);
+    cursor: pointer;
 
     @include b.breakpoint(medium) {
       padding-bottom: f.rem(10);
     }
+  }
+
+  &__item:hover {
+    color: var(--color-white);
   }
 }
 
@@ -286,3 +291,5 @@ main {
   font-size: f.rem(15);
   color: var(--color-pale-blue);
 }
+
+.activeButton {}

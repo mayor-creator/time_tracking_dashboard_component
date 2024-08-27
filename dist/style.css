@@ -91,11 +91,15 @@ main {
 .report__item {
   font-size: 1.125rem;
   color: var(--color-pale-blue);
+  cursor: pointer;
 }
 @media (min-width: 43.75em) {
   .report__item {
     padding-bottom: 0.625rem;
   }
+}
+.report__item:hover {
+  color: var(--color-white);
 }
 
 .work__imageContainer {
