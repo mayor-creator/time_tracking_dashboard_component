@@ -28,12 +28,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Solution screen shot](./timeTrackingdashboard.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Time Tracking solution URL](https://github.com/mayor-creator/time_tracking_dashboard_component)
+- Live Site URL: [Time Tracking live site](https://time-tracking-dashboard-component.vercel.app/)
 
 ## My process
 
@@ -47,32 +47,35 @@ Users should be able to:
 
 ### What I learned
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-
-```css
-.proud-of-this-css {
-	color: papayawhip;
-}
-```
-
 ```js
-const proudOfThisFunc = () => {
-	console.log("🎉");
+const handleMonthlyData = async () => {
+	const fetchData = "../data.json";
+	const response = await fetch(fetchData);
+	try {
+		if (!response.ok) {
+			alert("Something went wrong. Please try again.");
+			return;
+		}
+		const data = await response.json();
+		monthlyData(data);
+	} catch (error) {
+		console.log(error);
+	}
 };
 ```
 
 ### Continued development
 
+- Building more project with fetch api
+- Sass
+
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Using the Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch?utm_medium=firefox-desktop&utm_source=firefox-suggest&utm_campaign=firefox-mdn-web-docs-suggestion-experiment&utm_content=treatment) - This helped me to understand how to use the fetch api
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@mayor-creator](https://www.frontendmentor.io/profile/mayor-creator)
+- Threads - [@mayor_creator](https://www.threads.net/@mayor_creator)
 
 ## Acknowledgments
