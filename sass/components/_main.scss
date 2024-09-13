@@ -31,7 +31,7 @@ main {
   @include b.breakpoint(medium) {
     margin-right: f.rem(30);
     margin-bottom: f.rem(0);
-    height: f.rem(450);
+    width: f.rem(255);
   }
 
   &__outerContainer {
@@ -74,6 +74,7 @@ main {
     @include b.breakpoint(medium) {
       max-width: f.rem(139);
       padding-bottom: f.rem(30);
+      font-size: f.rem(40);
     }
   }
 
@@ -260,6 +261,10 @@ main {
 .hours {
   font-size: f.rem(32);
   font-weight: v.$font-light;
+
+  @include b.breakpoint(medium) {
+    font-size: f.rem(56);
+  }
 }
 
 .dots {

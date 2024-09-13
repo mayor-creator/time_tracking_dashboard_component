@@ -34,7 +34,7 @@ main {
   .report {
     margin-right: 1.875rem;
     margin-bottom: 0rem;
-    height: 28.125rem;
+    width: 15.9375rem;
   }
 }
 .report__outerContainer {
@@ -76,6 +76,7 @@ main {
   .report__name {
     max-width: 8.6875rem;
     padding-bottom: 1.875rem;
+    font-size: 2.5rem;
   }
 }
 .report__profileContainer {
@@ -242,6 +243,11 @@ main {
 .hours {
   font-size: 2rem;
   font-weight: 300;
+}
+@media (min-width: 43.75em) {
+  .hours {
+    font-size: 3.5rem;
+  }
 }
 
 .dots {
